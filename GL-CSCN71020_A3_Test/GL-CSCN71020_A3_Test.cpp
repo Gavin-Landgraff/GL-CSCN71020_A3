@@ -14,6 +14,7 @@ public:
 		char* p1 = "a";
 		char* p2 = "b";
 
+
 		char* result = rock_paper_scissors(p1, p2);
 		char* expect_result = "Invalid";
 
