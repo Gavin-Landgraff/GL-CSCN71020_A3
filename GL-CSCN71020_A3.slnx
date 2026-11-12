@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GL-CSCN71020_A3/GL-CSCN71020_A3.vcxproj" Id="56c47eca-2097-4464-9a10-1e8c2927b6a7" />
+  <Project Path="GL-CSCN71020_A3_Test/GL-CSCN71020_A3_Test.vcxproj" />
+</Solution>
