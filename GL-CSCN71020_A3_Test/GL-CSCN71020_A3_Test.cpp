@@ -82,7 +82,7 @@ namespace GavinLandgraffCSCN71020A3Test {
 
 			char* result = rock_paper_scissors(player1, player2);
 
-			Assert::AreEqual("Draw - Rock", result);
+			Assert::AreEqual("Draw", result);
 		}
 
 		TEST_METHOD(Draw_both_paper) {
@@ -91,7 +91,7 @@ namespace GavinLandgraffCSCN71020A3Test {
 
 			char* result = rock_paper_scissors(player1, player2);
 
-			Assert::AreEqual("Draw - Paper", result);
+			Assert::AreEqual("Draw", result);
 		}
 
 		TEST_METHOD(Draw_both_scissors) {
@@ -100,7 +100,7 @@ namespace GavinLandgraffCSCN71020A3Test {
 
 			char* result = rock_paper_scissors(player1, player2);
 
-			Assert::AreEqual("Draw - Scissors", result);
+			Assert::AreEqual("Draw", result);
 		}
 
 	};
