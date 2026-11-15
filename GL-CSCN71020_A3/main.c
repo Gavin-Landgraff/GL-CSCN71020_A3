@@ -16,6 +16,17 @@ char* rock_paper_scissors(char* p1_obj, char* p2_obj) {
 
 	if (strcmp(p1_str, p2_str) == 0) {
 		result = "Draw";
+		return result;
+	}
+
+	char p1 = *p1_str;
+	char p2 = *p2_str;
+
+	switch (p1) {
+		case 'R': result = (p2 == 'S') ? "Player1" : "Player2"; break;
+		case 'P': result = (p2 == 'R') ? "Player1" : "Player2"; break;
+		case 'S': result = (p2 == 'P') ? "Player1" : "Player2"; break;
+		default: result = "Invalid"; break;
 	}
 
 	return result;
