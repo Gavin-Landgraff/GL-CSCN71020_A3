@@ -163,6 +163,59 @@ namespace GavinLandgraffCSCN71020A3Test {
 			Assert::AreEqual("Player2", result);
 		}
 
-		
+		TEST_METHOD(First_input_case_check_rock) {
+			char* player1 = "RoCk";
+			char* player2 = "rock";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw", result);
+		}
+
+		TEST_METHOD(First_input_case_check_paper) {
+			char* player1 = "pAPeR";
+			char* player2 = "paper";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw", result);
+		}
+
+		TEST_METHOD(First_input_case_check_scissors) {
+			char* player1 = "SciSsoRs";
+			char* player2 = "scissors";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw", result);
+		}
+
+		TEST_METHOD(Second_input_case_check_rock) {
+			char* player1 = "rock";
+			char* player2 = "RoCk";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw", result);
+		}
+
+		TEST_METHOD(Second_input_case_check_paper) {
+			char* player1 = "paper";
+			char* player2 = "pAPeR";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw", result);
+		}
+
+		TEST_METHOD(Second_input_case_check_scissors) {
+			char* player1 = "scissors";
+			char* player2 = "SciSsoRs";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw", result);
+		}
+
 	};
 }
