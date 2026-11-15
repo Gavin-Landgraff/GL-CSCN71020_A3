@@ -18,6 +18,16 @@ namespace GavinLandgraffCSCN71020A3Test {
 			Assert::AreEqual(expect_result, result);
 		}
 
+		TEST_METHOD(Both_inputs_invalid_and_same) {
+			char* p1 = "a";
+			char* p2 = "a";
+
+			char* result = rock_paper_scissors(p1, p2);
+			char* expect_result = "Invalid";
+
+			Assert::AreEqual(expect_result, result);
+		}
+
 		TEST_METHOD(First_input_invalid_second_rock) {
 			char* player1 = "a";
 			char* player2 = "Rock";
