@@ -67,7 +67,6 @@ namespace GavinLandgraffCSCN71020A3Test {
 			Assert::AreEqual("Invalid", result);
 		}
 
-
 		TEST_METHOD(Second_input_invalid_first_scissors) {
 			char* player1 = "Scissors";
 			char* player2 = "b";
@@ -75,6 +74,33 @@ namespace GavinLandgraffCSCN71020A3Test {
 			char* result = rock_paper_scissors(player1, player2);
 
 			Assert::AreEqual("Invalid", result);
+		}
+
+		TEST_METHOD(Draw_both_rock) {
+			char* player1 = "Rock";
+			char* player2 = "Rock";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw - Rock", result);
+		}
+
+		TEST_METHOD(Draw_both_paper) {
+			char* player1 = "Paper";
+			char* player2 = "Paper";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw - Paper", result);
+		}
+
+		TEST_METHOD(Draw_both_scissors) {
+			char* player1 = "Scissors";
+			char* player2 = "Scissors";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Draw - Scissors", result);
 		}
 
 	};
