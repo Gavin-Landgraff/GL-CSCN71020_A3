@@ -37,7 +37,6 @@ namespace GavinLandgraffCSCN71020A3Test {
 			Assert::AreEqual("Invalid", result);
 		}
 
-
 		TEST_METHOD(Second_input_invalid_first_rock) {
 			char* player1 = "Rock";
 			char* player2 = "b";
@@ -46,7 +45,6 @@ namespace GavinLandgraffCSCN71020A3Test {
 
 			Assert::AreEqual("Invalid", result);
 		}
-
 
 		TEST_METHOD(First_input_invalid_second_paper) {
 			char* player1 = "a";
@@ -57,7 +55,6 @@ namespace GavinLandgraffCSCN71020A3Test {
 			Assert::AreEqual("Invalid", result);
 		}
 
-
 		TEST_METHOD(Second_input_invalid_first_paper) {
 			char* player1 = "Paper";
 			char* player2 = "b";
@@ -66,7 +63,6 @@ namespace GavinLandgraffCSCN71020A3Test {
 
 			Assert::AreEqual("Invalid", result);
 		}
-
 
 		TEST_METHOD(First_input_invalid_second_scissors) {
 			char* player1 = "a";
@@ -113,5 +109,60 @@ namespace GavinLandgraffCSCN71020A3Test {
 			Assert::AreEqual("Draw", result);
 		}
 
+		TEST_METHOD(Player_1_wins_rock) {
+			char* player1 = "Rock";
+			char* player2 = "Scissors";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Player1", result);
+		}
+
+		TEST_METHOD(Player_2_wins_rock) {
+			char* player1 = "Scissors";
+			char* player2 = "Rock";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Player2", result);
+		}
+
+		TEST_METHOD(Player_1_wins_paper) {
+			char* player1 = "Paper";
+			char* player2 = "Rock";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Player1", result);
+		}
+
+		TEST_METHOD(Player_2_wins_paper) {
+			char* player1 = "Rock";
+			char* player2 = "Paper";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Player2", result);
+		}
+
+		TEST_METHOD(Player_1_wins_scissors) {
+			char* player1 = "Scissors";
+			char* player2 = "Paper";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Player1", result);
+		}
+
+		TEST_METHOD(Player_2_wins_scissors) {
+			char* player1 = "Paper";
+			char* player2 = "Scissors";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Player2", result);
+		}
+
+		
 	};
 }
