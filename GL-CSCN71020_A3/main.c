@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 #include "main.h"
 
 char* rock_paper_scissors(char* p1_obj, char* p2_obj) {

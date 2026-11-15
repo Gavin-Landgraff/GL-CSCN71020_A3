@@ -8,7 +8,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 namespace GavinLandgraffCSCN71020A3Test {
 	TEST_CLASS(GavinLandgraffCSCN71020A3Test) {
 		public:
-		TEST_METHOD(Both_Invalid) {
+		TEST_METHOD(Both_inputs_invalid) {
 			char* p1 = "a";
 			char* p2 = "b";
 
@@ -18,6 +18,64 @@ namespace GavinLandgraffCSCN71020A3Test {
 			Assert::AreEqual(expect_result, result);
 		}
 
-		// More Tests
+		TEST_METHOD(First_input_invalid_second_rock) {
+			char* player1 = "a";
+			char* player2 = "Rock";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Invalid", result);
+		}
+
+
+		TEST_METHOD(Second_input_invalid_first_rock) {
+			char* player1 = "Rock";
+			char* player2 = "b";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Invalid", result);
+		}
+
+
+		TEST_METHOD(First_input_invalid_second_paper) {
+			char* player1 = "a";
+			char* player2 = "Paper";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Invalid", result);
+		}
+
+
+		TEST_METHOD(Second_input_invalid_first_paper) {
+			char* player1 = "Paper";
+			char* player2 = "b";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Invalid", result);
+		}
+
+
+		TEST_METHOD(First_input_invalid_second_scissors) {
+			char* player1 = "a";
+			char* player2 = "Scissors";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Invalid", result);
+		}
+
+
+		TEST_METHOD(Second_input_invalid_first_scissors) {
+			char* player1 = "Scissors";
+			char* player2 = "b";
+
+			char* result = rock_paper_scissors(player1, player2);
+
+			Assert::AreEqual("Invalid", result);
+		}
+
 	};
 }
